@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Westland SAMP Server</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+        }
+        header {
+            background: #111;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #1e2a38;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #00aced;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .users {
+            margin-top: 30px;
+        }
+        .user {
+            background: #2e3d55;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    WESTLAND SAMP SERVER
+</header>
+
+<div class="container">
+    <h2>Login / Register</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+    </form>
+    <p style="text-align:center; margin-top:10px;">Don't have an account? <a href="#" style="color:#4CAF50;">Register Here</a></p>
+
+    <div class="users">
+        <h3>Registered Users</h3>
+        <div class="user">Player1</div>
+        <div class="user">Player2</div>
+        <div class="user">Player3</div>
+    </div>
+</div>
+
+<div class="footer">
+    Contact Us:
+    <a href="https://chat.whatsapp.com/IX8CmgaeQRcHBcNM3WlBtZ" target="_blank">WhatsApp</a>
+</div>
+
+</body>
+</html>
